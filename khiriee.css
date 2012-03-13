@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document  by mrm.m*/
+/* < browser reset ----- */
+
+@media all{
+	
+/* Global reset of paddings and margins for all HTML elements */
+*{  
+	padding:0;
+	margin:0;
+}
+
+/* Correction:margin/padding reset caused too small select boxes. */
+option{
+	padding-left:0.4em;
+}/*LTR*/
+
+select {
+	padding:1px;
+}
+
+/* (en) Global fix of the Italics bugs in IE 5.x and IE 6 */
+* html body *{
+	overflow:visible;
+}
+
+body{
+	background-color:#D7D7D7;
+	font-size:100.01%; /* Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+	color:#000;
+	text-align:right; /* for RTL */
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+}
+
+div{
+	outline:0 none;
+}
+
+/* HTML 5 - adjusting visual formatting model to block level */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display:block;
+}
+
+/* Clear borders for <fieldset> and <img> elements */
+fieldset, img {
+	border:0 solid;
+}
+
+/* Clear borders/outline for links when you click */
+a:active, a:href {
+ border:0 none;
+ outline:0 none;
+}
+} 
+
+@media print {
+
+.noprint {
+	display:none !important;
+}
+
+}
+/* ----- browser reset /> */
+
+/* < start of major divs ----- */
+
+div.container{
+	width:720px;
+	min-height:630px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url("background.gif");
+	 /*this line of code is just for visibility, after Verification will delete it*/
+}
+
+div.toolbar{
+	width:auto;
+	height:55px;
+	outline:1px solid red; /*this line of code is just for visibility, after Verification will delete it*/
+}
+
+div.header{
+	width:auto;
+	min-height:142px;
+	outline:1px solid #66C;/*this line of code is just for visibility, after Verification will delete it*/
+}
+
+div.contain{
+	width:auto;
+	min-height:343px;
+	outline:1px solid red;/*this line of code is just for visibility, after Verification will delete it*/
+}
+
+div.space{
+	width:auto;
+	min-height:30px;
+	outline:solid 1px #0F0;/*this line of code is just for visibility, after Verification will delete it*/
+}
+
+div.footer{
+	width:auto;
+	min-height:60px;
+	outline:1px solid red;/*this line of code is just for visibility, after Verification will delete it*/	
+}
+
+div.clear{
+	width:0px !important;
+	height:0px !important;
+	clear:both !important;
+	overflow:hidden !important;
+}
+/* ----- start of major divs /> */
+div.contain div.main{
+	width:548px;
+	height:343px;
+	margin-left:auto;
+	margin-right:auto;
+	outline:1px solid #C93;/*this line of code is just for visibility, after Verification will delete it*/
+}
+
+div.contain div.main div.contain-imgs{
+	width:auto;
+	height:171px;
+	outline:1px soli #F3C;/*this line of code is just for visibility, after Verification will delete it*/
+	
+}
+
+div.contain div.main div.contain-imgs div.images{
+	width:137px;
+	height:171px;
+	float:left;
+	outline:1px solid red;/*this line of code is just for visibility, after Verification will delete it*/
+}
+div.contain div.main div.contain-imgs div.images.last{
+	float:none;	
+	margin-left:auto;
+}
+	
